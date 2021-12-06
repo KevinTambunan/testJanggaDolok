@@ -29,6 +29,9 @@ class BeritaDesaController extends Controller
     public function indexAdmin()
     {
         $list = BeritaDesa::sortable()->paginate(20);
+        if(Auth::user()->role_id == 4){
+            $list = BeritaDesa::where('penulis_id', Auth::user()->id_user)->sortable()->paginate(20);
+        }
         return view('admin.berita-index', compact('list'));
     }
 

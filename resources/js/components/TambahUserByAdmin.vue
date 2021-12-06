@@ -38,11 +38,7 @@
                                 <div class="row mt-2">
                                     <div class="col-md-2 text-left">Role</div>
                                     <div class="col-md-7">
-                                        <select id="myList" class="form-control" required v-model="user.role">
-                                            <option value="admin">Administrator</option>
-                                            <option value="author" disabled>Author</option>
-                                            <option value="pengunjung">Pengunjung</option>
-                                        </select>
+                                        <input class="form-control" readonly value="author" type="text" required v-model="user.role"/>
                                     </div>
                                 </div>
                                 <div class="row mt-2">
@@ -108,7 +104,7 @@
                     password: '',
                     password_confirmation: '',
                     username: '',
-                    role: 'admin'
+                    role: 'author'
                 },
                 err: []
             }
