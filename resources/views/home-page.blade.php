@@ -147,28 +147,28 @@
     <div class="container">
         <div class="container">
             <div class="row">
-                <div class="sub-title">Paket Wisata</div>
+                <div class="sub-title">Berita Terbaru</div>
             </div>
         </div>
         <div class="row ">
             <div class="container background">
                 <div class="row">
-                    @if(count($paket))
-                    @foreach($paket as $data)
+                    @if(count($berita))
+                    @foreach($berita as $data)
                     <div class="col-md-4 mt-4 mb-4">
                         <q-card class="my-card">
-                            <a href="/detail-paket-wisata/{{$data->id_pkt_wisata}}"><img src="{{$data->file_foto}}"
+                            <a href="/berita-detail/{{$data->id_berita}}"><img src="{{$data->file_foto}}"
                                     class="card-img2"></a>
 
                             <q-card-section>
-                                <a href="/detail-paket-wisata/{{$data->id_pkt_wisata}}">
-                                    <div class="card-title-home">{{$data->nama_paket}}</div>
+                                <a href="/berita-detail/{{$data->id_berita}}">
+                                    <div class="card-title-home">{{$data->judul_berita}}</div>
                                 </a>
                                 <div class="card-caption-home">
-                                    <?php echo (strip_tags($data->keterangan)); ?>
+                                    <?php echo (strip_tags($data->isi_berita)); ?>
                                 </div>
                                 <div class="card-link">
-                                    <a href="{{ URL('/detail-paket-wisata/'.$data->id_pkt_wisata) }}"
+                                    <a href="{{ URL('/berita-detail/'.$data->id_berita) }}"
                                         style="padding-bottom-bottom: 10px">Baca Selengkapnya</a>
                                 </div>
                             </q-card-section>

@@ -152,6 +152,7 @@
                         </li>
                     </ul>
                 </li>
+                @endif
                 {{-- menu kelola wisata desa yang dipeach --}}
                     <li>
                         <a href="/kelola-aktivitas">Wisata Desa</a>
@@ -160,12 +161,15 @@
                         <a href="/kelola-wisata">Objek Wisata Berdasarkan Ketegori</a>
                     </li>
                     {{-- kategori ini disembunyikan untuk admin --}}
-                    @if (Auth::User()->role_id != 2)
+                    @if (Auth::User()->role_id == 3)
                     <li>
                         <a href="/kelola-kat-wisata">Kategori Wisata Desa</a>
                     </li>
                     @endif
                 {{--  --}}
+
+                {{-- author tidak dapat mengubah fasilitas --}}
+                @if (Auth::User()->role_id != 4)
                 <li>
                     <a href="/kelola-fasilitas">Fasilitas</a>
                 </li>

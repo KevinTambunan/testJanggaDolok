@@ -20,7 +20,52 @@
                         <th>Foto Sampul</th>
                         <th width="30%">Aksi</th>
                     </tr>
+                    @foreach($list2 as $id => $data)
+                    <tr class="table-content">
+                        <td>{{$list->firstItem() + $id}}</td>
+                        <td>{{ $data->judul_berita }}</td>
+                        <td><img src="{{ $data->file_foto }}" style="width:200px; height: 130px; object-fit: cover;"/></td>
+                        <td>
+                            <a href="{{ URL('/lihat-berita/'.$data->id_berita) }}" class="btn btn-new-lihat"><i class="fa fa-eye"></i> Lihat
+                            </a>
+                            <a href="{{ URL('/edit-berita/'.$data->id_berita) }}" class="btn btn-new"><i class="fa fa-edit"></i> Edit</a>
+                            <button class="btn btn-new-hapus" data-toggle="modal" data-target="#Modal{{ $id }}"><i class="fa fa-trash"></i> Hapus</button>
+
+                            <div class="modal fade" id="Modal{{ $id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="sub-title" id="exampleModalLabel">Konfirmasi Hapus</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Apakah anda yakin ingin menghapus berita ini?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-new-secondary" data-dismiss="modal">Tidak</button>
+                                            <a href="{{ URL('/detail-berita/delete/'.$data->id_berita) }}" type="button" class="btn btn-new-hapus">Ya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    @endforeach
                     @foreach($list as $id => $data)
+                    @if (Auth::User()->role_id == 4)
+                        @if (Auth::User()->id_user != $data->penulis_id)
+                        <tr class="table-content">
+                            <td>{{$list->firstItem() + $id}}</td>
+                            <td>{{ $data->judul_berita }}</td>
+                            <td><img src="{{ $data->file_foto }}" style="width:200px; height: 130px; object-fit: cover;"/></td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        @endif
+                    @else
                     <tr class="table-content">
                         <td>{{$list->firstItem() + $id}}</td>
                         <td>{{ $data->judul_berita }}</td>
@@ -51,6 +96,8 @@
                             </div>
                         </td>
                     </tr>
+                    @endif
+
                     @endforeach
                 </table>
             </div>
