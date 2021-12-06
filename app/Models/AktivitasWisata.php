@@ -21,12 +21,12 @@ class AktivitasWisata extends Model
      */
     protected $table = "aktivitas-wisata";
     protected $primaryKey = 'aktivitas_id';
-    // protected $fillable = [
-    //     'nama_wisata',
-    //     'deskripsi',
-    //     'file_foto',
-    //     'kategori_id',
-    // ];
+    protected $fillable = [
+        'judul',
+        'deskripsi',
+        'file_foto',
+        'penulis_id'
+    ];
 
     // public function kategoriWisata() {
     //     return $this->hasOne(KategoriWisata::class, 'id_kategori', 'kategori_id');

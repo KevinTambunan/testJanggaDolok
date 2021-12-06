@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 use App\Models\AktivitasWisata;
+use App\Models\ObjekWisata;
+use App\Models\KategoriWisata;
 // use App\Models\KategoriWisata;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,12 +39,14 @@ class AktivitasWisataController extends Controller
 
     public function kelolaAktivitas()
     {
-        $aktivitas = AktivitasWisata::sortable(['aktivitas_id' => 'ASC'])->paginate(10);
-        
+        $aktivitas = AktivitasWisata::sortable(['aktivitas_id' => 'ASC'])->paginate(20);
+        $aktivitas2 = AktivitasWisata::where('penulis_id', Auth::user()->id_user)->sortable(['aktivitas_id' => 'ASC'])->paginate(20);
+
         // $count = AktivitasWisata::where('isUnggulan', '=', 1)->count();
 
         return view('admin.aktivitas-wisata-index', [
             'aktivitas' => $aktivitas,
+            'aktivitas2' => $aktivitas2,
             // 'count' => $count
         ]);
     }
@@ -58,6 +62,7 @@ class AktivitasWisataController extends Controller
         $newAktivitas = new AktivitasWisata();
         $newAktivitas->judul = $request->title;
         $newAktivitas->deskripsi = $request->story;
+        $newAktivitas->penulis_id = $user->id_user;
 
         $explode = explode(',', $request['img']);
         if (strpos($explode[0], 'data') !== false) {

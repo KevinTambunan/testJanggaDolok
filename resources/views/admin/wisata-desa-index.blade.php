@@ -38,9 +38,17 @@
                             <td><img src="{{ $data->file_foto }}" style="width:200px; height: 130px; object-fit: cover;"/></td>
                             <td>{{ $data->kategoriWisata->nama_kategori }}</td>
                             <td>
-                                <a href="/detail-wisata-admin/{{$data->id_obj_wisata}}" class="btn btn-new-lihat"><i class="fa fa-eye"></i> Lihat</a>
-                                <a href="/edit-obj-wisata/{{$data->id_obj_wisata}}" class="btn btn-new"><i class="fa fa-edit"></i> Edit</a>
-                                <button class="btn btn-new-hapus" data-toggle="modal" data-target="#Modal{{ $key }}"><i class="fa fa-trash"></i> Hapus</button>
+                                @if (Auth::User()->role_id == 4)
+                                    @if (Auth::User()->id_user == $data->penulis_id)
+                                        <a href="/detail-wisata-admin/{{$data->id_obj_wisata}}" class="btn btn-new-lihat"><i class="fa fa-eye"></i> Lihat</a>
+                                        <a href="/edit-obj-wisata/{{$data->id_obj_wisata}}" class="btn btn-new"><i class="fa fa-edit"></i> Edit</a>
+                                        <button class="btn btn-new-hapus" data-toggle="modal" data-target="#Modal{{ $key }}"><i class="fa fa-trash"></i> Hapus</button>
+                                    @endif
+                                @else
+                                    <a href="/detail-wisata-admin/{{$data->id_obj_wisata}}" class="btn btn-new-lihat"><i class="fa fa-eye"></i> Lihat</a>
+                                    <a href="/edit-obj-wisata/{{$data->id_obj_wisata}}" class="btn btn-new"><i class="fa fa-edit"></i> Edit</a>
+                                    <button class="btn btn-new-hapus" data-toggle="modal" data-target="#Modal{{ $key }}"><i class="fa fa-trash"></i> Hapus</button>
+                                @endif
                                 <div class="modal fade" id="Modal{{ $key }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -68,7 +76,7 @@
         </div>
         <div class="container">
             <div class="pagination justify-content-center">
-                {!! $objek->appends(\Request::except('page'))->render() !!}            
+                {!! $objek->appends(\Request::except('page'))->render() !!}
             </div>
         </div>
     </div>

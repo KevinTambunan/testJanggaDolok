@@ -290,7 +290,7 @@ Route::middleware(['admin', 'auth'])->group(function () {
     Route::get('/kat-wisata/delete/{kategori}', [ObjekWisataController::class, 'hapusKategori']);
 
     Route::get('/kelola-wisata', [ObjekWisataController::class, 'kelolaObjek']);
-    Route::get('/kelola-wisata/{kat_id}', [ObjekWisataController::class, 'kelolaObjek']);
+    // Route::get('/kelola-wisata/{kat_id}', [ObjekWisataController::class, 'kelolaObjek']);
 
     Route::get('/detail-wisata-admin/{objek}', function () {
         return view('admin.wisata-desa-view');

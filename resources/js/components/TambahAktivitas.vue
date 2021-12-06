@@ -2,7 +2,7 @@
     <div class="container">
         <form @submit.prevent="save">
             <div class="row">
-                <div class="title">Tambah Aktivitas Wisata</div>
+                <div class="title">Tambah Aktivitas</div>
             </div>
             <div class="row mt-2">
                 <div class="col-md-4 text-left card-caption-home">Judul</div>
@@ -13,11 +13,13 @@
             <div class="row mt-2">
                 <div class="col-md-4 text-left card-caption-home">Foto Sampul</div>
                 <div class="col-md-8">
+                    <!-- <label for="file-upload" class="custom-file-upload">Upload Foto</label> -->
+                    <!-- <input required id="file-upload" type="file" style="display:none;" accept="image/*" @change="change_image"> -->
                     <input required type="file" accept="image/*" @change="change_image">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 text-left card-caption-home">Deskripsi</div>
+                <div class="col-md-4 text-left card-caption-home">Deskripsi Aktivitas</div>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -44,9 +46,22 @@
                     img: '',
                     story: '',
                 },
+                ckeditor: null
             };
         },
         methods: {
+            construct() {
+                CKEDITOR.ClassicEditor.create(document.querySelector('#editor'))
+                    .then(editor => {
+                        this.ckeditor = editor
+                        window.editor = editor;
+                        window.editor.placeholder = 'Tulis Cerita anda....'
+                        window.editor.extraPlugins = [this.uploader(editor)]
+                    })
+                    .catch(error => {
+                        console.error('There was a problem initializing the editor.', error);
+                    });
+            },
             uploader(editor) {
                 editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
                     return new UploadAdapter(loader);
@@ -66,30 +81,19 @@
             onInitialized(editor) {
             },
             async save() {
-                this.data_res.story = window.editor.getData()
+                this.data_res.story = this.ckeditor.getData()
                 axios.post('/simpan-aktivitas', this.data_res)
                     .then(e => {
-                        alert('Aktivitas wisata berhasil ditambahkan')
+                        alert('Aktivitas berhasil ditambahkan')
                         window.location.href = '/kelola-aktivitas'
                     })
                     .catch(e => {
                         alert('Kesalahan pada sistem, Coba beberapa waktu lagi.')
                     })
             },
-            construct() {
-                CKEDITOR.ClassicEditor.create(document.querySelector('#editor'))
-                    .then(editor => {
-                        window.editor = editor;
-                        window.editor.placeholder = 'Tulis Cerita anda....'
-                        window.editor.extraPlugins = [this.uploader(editor)]
-                    })
-                    .catch(error => {
-                        console.error('There was a problem initializing the editor.', error);
-                    });
-            }
         },
-        mounted() {
-            this.construct();
+        mounted(){
+            this.construct()
         }
     };
 </script>

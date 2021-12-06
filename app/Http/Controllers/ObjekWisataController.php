@@ -99,6 +99,8 @@ class ObjekWisataController extends Controller
         $newObjek->nama_wisata = $request->title;
         $newObjek->deskripsi = $request->story;
         $newObjek->kategori_id = $request->kategori;
+        $newObjek->penulis_id = $user->id_user;
+
 
         $explode = explode(',', $request['img']);
         if (strpos($explode[0], 'data') !== false) {
