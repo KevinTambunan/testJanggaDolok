@@ -94,6 +94,7 @@ class HomeController extends Controller
         $sliderObjek = ObjekWisata::orderBy('id_obj_wisata', 'DESC')->take(2)->get();
         $slider2 = PaketWisata::orderBy('id_pkt_wisata', 'DESC')->first();
         $slider3 = BeritaDesa::orderBy('id_berita', 'DESC')->first();
+        $berita = BeritaDesa::sortable()->paginate(3);
 
         $unggulan = ObjekWisata::where('isUnggulan', '=', 1)->take(3)->get();
         $paket = PaketWisata::orderBy('id_pkt_wisata', 'DESC')->take(3)->get();
@@ -108,6 +109,7 @@ class HomeController extends Controller
                 'unggulan',
                 'paket',
                 'kategori',
+                'berita'
                 // 'count'
             ));
     }

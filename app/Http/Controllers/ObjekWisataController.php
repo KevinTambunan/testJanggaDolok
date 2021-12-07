@@ -74,10 +74,10 @@ class ObjekWisataController extends Controller
     public function kelolaObjek($kat_id = null)
     {
         if($kat_id != null){
-            $objek = ObjekWisata::where('kategori_id', '=', $kat_id)->sortable(['isUnggulan' => 'DESC'])->sortable(['id_obj_wisata' => 'ASC'])->paginate(10);
+            $objek = ObjekWisata::where('kategori_id', '=', $kat_id)->orderBy('isUnggulan', 'desc')->paginate(10);
         }
         else{
-            $objek = ObjekWisata::sortable(['isUnggulan' => 'DESC'])->sortable(['id_obj_wisata' => 'ASC'])->paginate(10);
+            $objek = ObjekWisata::orderBy('isUnggulan', 'desc')->paginate(10);
         }
         $count = ObjekWisata::where('isUnggulan', '=', 1)->count();
 
@@ -132,11 +132,23 @@ class ObjekWisataController extends Controller
 
     public function saveEditWisata(Request $request, $id)
     {
+
         $objek = ObjekWisata::find($id);
         $objek->nama_wisata = $request->title;
         $objek->deskripsi = $request->story;
         $objek->kategori_id = $request->kategori;
         $objek->isUnggulan = $request->unggulan;
+
+        $wisataUnggulan = ObjekWisata::where('isUnggulan', 1)->get();
+
+        if(count($wisataUnggulan) == 3){
+            if($request->unggulan == 1){
+                echo "<script>alert('tidak boleh ada yang kosong! Periksa kembali');</script>";
+                return redirect('/kelola-wisata');
+            }
+        }
+
+
 
         $explode = explode(',', $request['img']);
         if (strpos($explode[0], 'data') !== false) {

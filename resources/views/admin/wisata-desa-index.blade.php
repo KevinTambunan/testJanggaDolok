@@ -8,7 +8,15 @@
         </div>
         <div class="container">
             <div class="alert alert-primary">
-                <strong class="alert-font">Harap memilih 3 objek wisata unggulan untuk ditampilkan pada halaman utama</strong>
+                @if ($count == 0)
+                    <strong class="alert-font">Objek wisata unggulan <label for="" class="text-secondary">belum ditentukan</label>, Harap memilih 3 objek wisata unggulan untuk ditampilkan pada halaman utama</strong>
+                @elseif ($count == 1)
+                    <strong class="alert-font">Objek wisata unggulan masih <label for="" class="text-secondary">1</label> ditentukan, Harap memilih 2 objek wisata unggulan lagi untuk ditampilkan pada halaman utama</strong>
+                @elseif ($count == 2)
+                    <strong class="alert-font">Objek wisata unggulan masih <label for="" class="text-secondary">2</label> ditentukan, Harap memilih 1 objek wisata unggulan lagi untuk ditampilkan pada halaman utama</strong>
+                @elseif ($count == 3)
+                    <strong class="alert-font">Objek wisata unggulan sudah <label for="" class="text-secondary">3</label> ditentukan, <label for="" class="text-secondary">Jika anda ingin mengganti objek wisata, harap me-nonaktifkan salah satu wisata unggulan</label></strong>
+                @endif
             </div>
         </div>
     </div>
