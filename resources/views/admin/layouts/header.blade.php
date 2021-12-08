@@ -266,9 +266,9 @@
                 <li>
                     <a href="/link-social-media">Link</a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="/tambah-menu">Menu</a>
-                </li>
+                </li> --}}
             </ul>
         </nav>
         <div id="content" class="container-fluid">
