@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31885.694308948438!2d98.94660996705521!3d2.5997759281728765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031ef76db428303%3A0xdfa9a9d36ab3574c!2sPardamean%20Sibisa%2C%20Ajibata%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1638959093907!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16476.829720829544!2d98.89634330012294!3d2.361213090193832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e1eb62d02645f%3A0xb03c619e591d46fa!2sSibandang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1638960633318!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
                                 </div>
                             </div>
