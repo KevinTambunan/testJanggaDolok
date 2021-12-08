@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31892.495324906824!2d98.9574649670214!3d2.315046941484605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e1b023a996c47%3A0x9c5750426f12a369!2sHuta%20Ginjang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1638967345602!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.199408821902!2d98.63388718484066!3d2.5401499246706134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031d0933c31e0a5%3A0xdb7c1c2489e8d729!2sSosor%20Dolok%2C%20Harian%2C%20Kabupaten%20Samosir%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1638968353040!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
                                 </div>
                             </div>
