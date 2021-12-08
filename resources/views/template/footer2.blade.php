@@ -20,8 +20,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31894.167893580772!2d98.88689081724527!3d2.2394878955315587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e172197c57e6d%3A0x212f0c1ca15c98dd!2sNagasaribu%20I%2C%20Lintong%20Nihuta%2C%20Kabupaten%20Humbang%20Hasundutan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1638950525093!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31892.011504311497!2d99.00328236725703!3d2.3364483910183345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04b6dbeff77f%3A0x76c79b4904edc93d!2sLintong%20Nihuta%2C%20Tampahan%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1638957613818!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
                                 </div>
                             </div>
