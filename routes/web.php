@@ -424,7 +424,7 @@ Route::middleware(['admin', 'auth'])->group(function () {
 
     //KELOLA AKTIVITAS WISATA
     Route::get('/kelola-aktivitas', [AktivitasWisataController::class, 'kelolaAktivitas']);
-    // Route::get('/kelola-wisata/{kat_id}', [ObjekWisataController::class, 'kelolaObjek']);
+    Route::get('/kelola-wisata/{kat_id}', [ObjekWisataController::class, 'kelolaObjek']);
 
     Route::get('/detail-aktivitas-admin/{objek}', function () {
         return view('admin.aktivitas-view');
