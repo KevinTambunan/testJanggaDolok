@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63775.745519090146!2d98.674641!3d2.512087!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031da1dbc85bced%3A0x871dec94e2035f02!2sHariara%20Pohan%2C%20Harian%2C%20Kabupaten%20Samosir%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640945740550!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15943.632077689468!2d98.639236!3d2.53689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031d0933c31e0a5%3A0xdb7c1c2489e8d729!2sSosor%20Dolok%2C%20Harian%2C%20Kabupaten%20Samosir%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640946722294!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
