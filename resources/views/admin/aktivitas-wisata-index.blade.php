@@ -2,7 +2,7 @@
 @include('admin.layouts.header')
 <div class="container">
     <div class="row">
-        <div class="title">Mengelola Aktivitas Wisata</div>
+        <div class="title">Kelola Aktivitas Wisata</div>
         <div class="container" style="margin-bottom: 20px">
             <a href="/tambah-aktivitas" class="btn btn-new"><i class="fa fa-plus"></i> Tambah Aktivitas Wisata</a>
         </div>

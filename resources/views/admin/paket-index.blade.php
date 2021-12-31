@@ -5,9 +5,9 @@
 @include('admin.layouts.header')
 <div class="container">
     <div class="row">
-        <div class="title">Mengelola Paket Wisata</div>
+        <div class="title">Kelola Paket Wisata</div>
         <div class="col-md-12">
-            <div class="container"> 
+            <div class="container">
                 @if(session()->has('notif'))
                     <div class="alert alert-danger">
                         <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-remove"></i></button> -->
@@ -70,20 +70,20 @@
         </div>
         <div class="container">
             <div class="pagination justify-content-center">
-                {!! $list->appends(\Request::except('page'))->render() !!}             
+                {!! $list->appends(\Request::except('page'))->render() !!}
             </div>
         </div>
     </div>
 
 </div>
-    
+
 
 @include('admin.layouts.footer')
 
 <script type="text/javascript">
     function readMore(id) {
         let dots = document.querySelector(`[data-city="${id}"] .dots`);
-        let moreText = document.querySelector(`[data-city="${id}"] .more`); 
+        let moreText = document.querySelector(`[data-city="${id}"] .more`);
         let btnText = document.querySelector(`[data-city="${id}"] .myBtn`);
 
         if (dots.style.display === "none") {
@@ -92,7 +92,7 @@
             moreText.style.display = "none";
         } else {
             dots.style.display = "none";
-            btnText.textContent = "Tutup"; 
+            btnText.textContent = "Tutup";
             moreText.style.display = "inline";
         }
     }

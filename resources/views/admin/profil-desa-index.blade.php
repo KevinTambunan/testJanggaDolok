@@ -2,7 +2,7 @@
 @include('admin.layouts.header')
 <div class="container">
     <div class="row">
-        <div class="title">Mengelola Profil Desa</div>
+        <div class="title">Kelola Profil Desa</div>
         <div class="container" style="margin-bottom: 20px">
             @if (Auth::User()->role_id != 2)
             <a href="{{ URL('/tambah-profil-desa') }}" class="btn btn-new"><i class="fa fa-plus"></i> Tambah Profil

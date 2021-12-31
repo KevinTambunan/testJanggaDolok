@@ -7,9 +7,14 @@
 
 <div class="container">
     @if (count($errors) > 0)
+      {{-- alert galeri --}}
       <div class="alert alert-danger">
-        <strong>Logo tidak berhasil diubah</strong><br><br>
-        Pastikan ukuran gambar sesuai dengan ketentuan.
+        <strong>Maaf!</strong> Ada yang salah dengan inputan anda, anda mungkin melakukan salah satu kesalahan di bawah<br><br>
+        <ul>
+          <li>Gambar melebihi 3MB</li>
+          <li>Lebar gambar melebih 1200 Pixel</li>
+          <li>Koneksi jaringan anda kurang stabil</li>
+        </ul>
       </div>
     @endif
     <div class="row form-group">
@@ -40,7 +45,7 @@
                                     <br/><label>Maks. Ukuran: 3MB <br/> Maks. Lebar: 1200 Pixel</label>
                                 </div>
                                 <div class="col-md-4 text-left"></div>
-                                <div class="col-md-8">   
+                                <div class="col-md-8">
                                     <div class="input-group control-group increment">
                                         <button type="submit" class="btn btn-new-form" style="margin-top:12px">Simpan</button>
                                     </div>

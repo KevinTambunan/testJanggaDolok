@@ -3,6 +3,23 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 
 <div class="container">
+    @if (count($errors) > 0)
+    {{-- alert galeri --}}
+      <div class="alert alert-danger">
+        <strong>Maaf!</strong> Ada yang salah dengan inputan anda, anda mungkin melakukan salah satu kesalahan di bawah<br><br>
+        <ul>
+          <li>Gambar melebihi 3MB</li>
+          <li>Lebar gambar melebih 1200 Pixel</li>
+          <li>Koneksi jaringan anda kurang stabil</li>
+        </ul>
+      </div>
+      @endif
+
+        @if(session('success'))
+        <div class="alert alert-success">
+          Foto berhasil diunggah
+        </div>
+        @endif
     <div class="row form-group">
         <div class="title">Tambah Kategori Galeri</div>
     </div>

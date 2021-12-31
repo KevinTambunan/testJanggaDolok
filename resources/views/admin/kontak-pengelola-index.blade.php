@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="title">Mengelola Kontak Pengelola</div>
+        <div class="title">Kelola Kontak Pengelola</div>
         <div class="container" style="margin-bottom: 20px">
             <!-- <a href="{{ URL('/tambah-profil-desa') }}" class="btn btn-new">Tambah Baru</a> -->
             <button class="btn btn-new" data-toggle="modal" data-target="#modalTambah"><i class="fa fa-plus"></i> Tambah Kontak</button>
@@ -49,7 +49,7 @@
                                         <button type="submit" class="btn btn-new-form" style="margin-top:12px"><i class="glyphicon glyphicon-check"></i>Tambah</button>
                                     </div>
                                 </div>
-                                        
+
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -124,7 +124,7 @@
                                                     <button type="submit" class="btn btn-new-form" style="margin-top:12px"><i class="glyphicon glyphicon-check"></i>Edit</button>
                                                 </div>
                                             </div>
-                                                    
+
                                         </form>
                                     </div>
                                     <div class="modal-footer">
@@ -160,7 +160,7 @@
         </div>
         <div class="container">
             <div class="pagination justify-content-center">
-                {!! $list->appends(\Request::except('page'))->render() !!}               
+                {!! $list->appends(\Request::except('page'))->render() !!}
             </div>
         </div>
     </div>

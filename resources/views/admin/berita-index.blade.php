@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="title">Mengelola Berita Desa</div>
+        <div class="title">Kelola Berita Desa</div>
         <div class="container" style="margin-bottom: 20px">
             <a href="{{ URL('/tambah-berita') }}" class="btn btn-new"><i class="fa fa-plus"></i> Tambah Berita</a>
         </div>

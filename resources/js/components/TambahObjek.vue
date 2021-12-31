@@ -11,6 +11,12 @@
                 </div>
             </div>
             <div class="row mt-2">
+                <div class="col-md-4 text-left card-caption-home"></div>
+                <div class="col-md-8">
+                    <input type="checkbox" id="checkbox" v-model="data_res.unggulan"> <label for="checkbox" class="card-caption-home">Wisata Unggulan</label>
+                </div>
+            </div>
+            <div class="row mt-2">
                 <div class="col-md-4 text-left card-caption-home">Kategori Objek Wisata</div>
                 <div class="col-md-8">
                     <select class="form-control" v-model="data_res.kategori" required>
@@ -53,6 +59,7 @@
                     title: '',
                     img: '',
                     story: '',
+                    unggulan: '',
                     kategori: null
                 },
                 objectWisata: [],

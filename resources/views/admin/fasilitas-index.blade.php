@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="title">Mengelola Fasilitas</div>
+        <div class="title">Kelola Fasilitas</div>
         <div class="container" style="margin-bottom: 20px">
             @if (Auth::User()->role_id != 2)
             <a href="{{ URL('/tambah-fasilitas') }}" class="btn btn-new"><i class="fa fa-plus"></i> Tambah Fasilitas</a>

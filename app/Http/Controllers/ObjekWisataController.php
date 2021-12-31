@@ -98,6 +98,14 @@ class ObjekWisataController extends Controller
         $newObjek = new ObjekWisata();
         $newObjek->nama_wisata = $request->title;
         $newObjek->deskripsi = $request->story;
+
+        if($request->unggulan == true){
+            $objekWisata = ObjekWisata::where('isUnggulan', 1)->get();
+            if(count($objekWisata) < 3){
+                $newObjek->isUnggulan = true;
+            }
+        }
+
         $newObjek->kategori_id = $request->kategori;
         $newObjek->penulis_id = $user->id_user;
 

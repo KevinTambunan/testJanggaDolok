@@ -176,7 +176,7 @@
 
 
                 <li>
-                    <a href="/kelola-berita">Kelola Berita</a>
+                    <a href="/kelola-berita">Berita</a>
                 </li>
 
                 @if (Auth::User()->role_id != 4)

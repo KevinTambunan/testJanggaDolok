@@ -38,7 +38,7 @@ class GaleriDesaController extends Controller
         visits('App\Models\Home')->increment();
         // visits($subKategori)->increment();
         // $count = visits($subKategori)->count();
-        
+
         $listFoto = GaleriDesa::where('kategori_foto_id', $subKategori->id_sub_kat_galeri)->get();
         $subKat = SubKategoriGaleri::where('id_sub_kat_galeri', $subKategori->id_sub_kat_galeri)->first();
         $listKategori = KategoriGaleri::where('id_kategori_galeri', '!=', $subKat->id_kategori)->get();
@@ -142,8 +142,17 @@ class GaleriDesaController extends Controller
             $galeri = SubKategoriGaleri::sortable()->paginate(10);
         }
 
+        // tambahan untuk perbaikan jika belum ada kategori ditambahkan
+        $kategoriGal = null;
+        $katGaleri = KategoriGaleri::first();
+        if($katGaleri == null){
+            $kategoriGal = null;
+        }else{
+            $kategoriGal = 1;
+        }
         return view('admin.galeri-index', [
-            'galeri' => $galeri
+            'galeri' => $galeri,
+            'katGaleri' => $kategoriGal
         ]);
     }
 

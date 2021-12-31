@@ -2,7 +2,7 @@
 @include('admin.layouts.header')
 <div class="container">
     <div class="row">
-        <div class="title">Mengelola Kategori Wisata</div>
+        <div class="title">Kelola Kategori Wisata</div>
         <!-- <div class="container" style="margin-bottom: 20px">
             <button class="btn btn-new" data-toggle="modal" data-target="#modalTambah"><i class="fa fa-plus"></i> Tambah Kategori Wisata</button>
             <div class="modal fade" id="modalTambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -29,7 +29,7 @@
                                         <button type="submit" class="btn btn-new-form" style="margin-top:12px"><i class="glyphicon glyphicon-check"></i>Tambah</button>
                                     </div>
                                 </div>
-                                        
+
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -58,7 +58,7 @@
                             <td>{{ $kategori->firstItem() + $i }}</td>
                             <td>{{ $data->nama_kategori }}</td>
                             <!-- <td>
-                                @if($data->icon != null)            
+                                @if($data->icon != null)
                                     <img src="{{ $data->icon }}" style="width:200px; height: 130px; object-fit: cover;"/>
                                 @endif
                             </td> -->
@@ -90,7 +90,7 @@
                                                             <button type="submit" class="btn btn-new-form" style="margin-top:12px"><i class="glyphicon glyphicon-check"></i>Edit</button>
                                                         </div>
                                                     </div>
-                                                            
+
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
@@ -129,7 +129,7 @@
         </div>
         <div class="container">
             <div class="pagination justify-content-center">
-                {!! $kategori->appends(\Request::except('page'))->render() !!}              
+                {!! $kategori->appends(\Request::except('page'))->render() !!}
             </div>
         </div>
     </div>

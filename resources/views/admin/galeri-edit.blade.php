@@ -26,12 +26,13 @@
 
 <div class="container">
 @if (count($errors) > 0)
+      {{-- alert galeri --}}
       <div class="alert alert-danger">
-        <strong>Sorry !</strong> There were some problems with your input.<br><br>
+        <strong>Maaf!</strong> Ada yang salah dengan inputan anda, anda mungkin melakukan salah satu kesalahan di bawah<br><br>
         <ul>
-          @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-          @endforeach
+          <li>Gambar melebihi 3MB</li>
+          <li>Lebar gambar melebih 1200 Pixel</li>
+          <li>Koneksi jaringan anda kurang stabil</li>
         </ul>
       </div>
       @endif
