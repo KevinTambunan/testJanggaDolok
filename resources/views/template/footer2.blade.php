@@ -21,10 +21,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15946.005751229115!2d99.01201577284208!3d2.3364484726211603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04b6dbeff77f%3A0x76c79b4904edc93d!2sLintong%20Nihuta%2C%20Tampahan%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640920370594!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15945.844117183457!2d99.01990772284249!3d2.350639472455242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04a73872f6c5%3A0x6da936cc86a7ab79!2sTara%20Bunga%2C%20Tampahan%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640927180393!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
                                     </div>
                                 </div>
                             </div>
