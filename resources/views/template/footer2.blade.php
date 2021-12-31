@@ -21,11 +21,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63785.203801798074!2d98.898106!3d2.310306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e19a13c8e341f%3A0xd2ee0bb30e3d44a8!2sPearung%2C%20Paranginan%2C%20Kabupaten%20Humbang%20Hasundutan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640932976882!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63788.33578261322!2d98.9044!3d2.239488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e172197c57e6d%3A0x212f0c1ca15c98dd!2sNagasaribu%20I%2C%20Lintong%20Nihuta%2C%20Kabupaten%20Humbang%20Hasundutan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640934309837!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-
                                     </div>
                                 </div>
                             </div>
