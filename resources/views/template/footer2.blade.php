@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15946.04830530561!2d98.911446!3d2.332698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e19682effabef%3A0x59f6719f88c544ef!2sHutana%20Godang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640942695027!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127552.05773742108!2d98.944592!3d2.506278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031e3f4e2a546c3%3A0xef4d8c88f8090eb0!2sOnan%20Runggu%2C%20Kabupaten%20Samosir%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640943760770!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
