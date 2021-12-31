@@ -21,9 +21,11 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31885.694308948438!2d98.94660996705521!3d2.5997759281728765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031ef76db428303%3A0xdfa9a9d36ab3574c!2sPardamean%20Sibisa%2C%20Ajibata%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640928691654!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63785.203801798074!2d98.898106!3d2.310306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e19a13c8e341f%3A0xd2ee0bb30e3d44a8!2sPearung%2C%20Paranginan%2C%20Kabupaten%20Humbang%20Hasundutan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1640932976882!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
                                     </div>
                                 </div>
                             </div>
