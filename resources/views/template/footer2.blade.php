@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63784.910415811806!2d99.001376!3d2.316829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e1b2618ee6569%3A0x36e2c26fb20124ca!2sMeat%2C%20Tampahan%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642005982554!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63771.38861426691!2d98.964163!3d2.599776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031ef76db428303%3A0xdfa9a9d36ab3574c!2sPardamean%20Sibisa%2C%20Ajibata%2C%20Toba%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642006668548!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
