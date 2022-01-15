@@ -21,11 +21,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63782.952682458854!2d98.902981!3d2.359895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e1eb62d02645f%3A0xb03c619e591d46fa!2sSibandang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642010182218!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63782.952682458854!2d98.902981!3d2.359895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e1eb62d02645f%3A0xb03c619e591d46fa!2sSibandang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642010182218!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31892.09661061122!2d98.911446!3d2.332698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e19682effabef%3A0x59f6719f88c544ef!2sHutana%20Godang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642205770304!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-
 
                                     </div>
                                 </div>

@@ -180,7 +180,7 @@
                         <br>
                         <div class="jumbotron jumbotron-fluid w-100">
                             <div class="container">
-                                <h5 class="display-5  d-flex justify-content-center">Informasi paket wisata belum
+                                <h5 class="display-5  d-flex justify-content-center">Informasi Berita belum
                                     tersedia</h5>
                             </div>
                         </div>
