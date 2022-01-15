@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63776.028915962306!2d98.90948661865835!3d2.506277030163091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031e3f4e2a546c3%3A0xef4d8c88f8090eb0!2sOnan%20Runggu%2C%20Kabupaten%20Samosir%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642207053750!5m2!1sid!2sid"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127569.98129436004!2d98.975018!3d2.315047!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e1b023a996c47%3A0x9c5750426f12a369!2sHuta%20Ginjang%2C%20Muara%2C%20Kabupaten%20Tapanuli%20Utara%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1642208301732!5m2!1sid!2sid"
                                             class="w-100" height="300" frameborder="0" style="border:0;"
                                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
